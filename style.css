@@ -1,0 +1,14 @@
+.fancy-font {
+    font-family: "K2D", sans-serif;
+}
+
+body {
+    background-image: url("./images/marble.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.text-change {
+    color: white;
+}
