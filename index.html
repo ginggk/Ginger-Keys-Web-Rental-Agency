@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>PlayBill Store</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
@@ -17,15 +17,16 @@
 <body>
     <div class="container pt-4">
         <div class="card bg-secondary">
-            <div class="card-header ">
-                <div class="row">
-                    <div class="col-3 center-pills text-center ">
-                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <a class="nav-link active bg-light text-color" id="v-pills-home-tab" data-toggle="pill"
-                                href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
-                            <a class="nav-link bg-light text-color" id="v-pills-rent-tab" data-toggle="pill" href="#v-pills-rent"
+            <div class="card-header pt-3">
+                <div class="row ">
+                    <div class="col-3 center-pills text-center pt-">
+                        <div class="nav flex-column nav-pills bg-light" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <a class="nav-link active text-color" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                                role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                            <a class="nav-link text-color" id="v-pills-rent-tab" data-toggle="pill" href="#v-pills-rent"
                                 role="tab" aria-controls="v-pills-rent" aria-selected="false">Rent</a>
-                            <a class="nav-link bg-light text-color" id="v-pills-cart-tab" data-toggle="pill" href="#v-pills-cart"
+                            <a class="nav-link text-color" id="v-pills-cart-tab" data-toggle="pill" href="#v-pills-cart"
                                 role="tab" aria-controls="v-pills-cart" aria-selected="false"><i class="fas fa-cart-arrow-down"></i></a>
                         </div>
                     </div>
@@ -48,7 +49,7 @@
                                                 visiting
                                                 our site! Be sure to rent a playbill and come back for another!</i></p>
                                     </div>
-                                    <hr class="line-divider col-9">
+                                    <hr class="line-divider col-11">
                                     <div class="container pt-3">
                                         <div class="row">
                                             <!-- <div class="col-lg-6"> -->
@@ -59,7 +60,7 @@
                                                         you would like..</h2>
                                                     <hr class="border-white">
                                                     <div class="playbill-info d-flex">
-                                                        <img src="images/wicked.JPG" width=895>
+                                                        <img class="pr-3" src="images/wicked.JPG" width=1095>
                                                         <p class="fancy-font text-change pl-3">
                                                             Wicked, the Broadway sensation, looks at what happened
                                                             in
@@ -80,9 +81,11 @@
                                                             Wicked playbill for a very low price! Get it today!
                                                         </p>
                                                     </div>
-                                                    <div class="price pt-3">
-                                                        <p class="fancy-font text-change text-center font-weight-bold">
+                                                    <div class="price pt-3 text-center">
+                                                        <p class="fancy-font text-change font-weight-bold">
                                                             Price: $15.00</p>
+                                                        <a href="#" class="button"><button class="btn btn-success btn-lg btn-block text-center fancy-font">Rent
+                                                                Now</button></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -92,13 +95,25 @@
 
                                 </div>
                             </div>
+                            <div class="tab-pane fade" id="v-pills-rent" role="tabpanel" aria-labelledby="v-pills-rent-tab">
+                                <div class="container">
+                                    <div class="card bg-secondary">
+                                        <div class="card-body text-change">
+                                            <h2 class="fancy-font text-center">
+                                                To add a playbill to your cart, press the plus sign at the bottom!
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-cart" role="tabpanel" aria-labelledby="v-pills-cart-tab">...</div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-rent" role="tabpanel" aria-labelledby="v-pills-rent-tab">...</div>
-                    <div class="tab-pane fade" id="v-pills-cart" role="tabpanel" aria-labelledby="v-pills-cart-tab">...</div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     </div>
@@ -110,6 +125,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="./javaScript.js"></script>
 
 
 </body>

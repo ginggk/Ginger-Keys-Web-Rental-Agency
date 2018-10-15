@@ -28,7 +28,3 @@ body {
 .text-color {
     color: black;
 }
-
-.text-color:active {
-    color: black;
-}
