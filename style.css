@@ -12,3 +12,23 @@ body {
 .text-change {
     color: white;
 }
+
+.line-divider {
+    border: 3px solid gray;
+}
+
+.center-pills {
+    margin-top: 11rem;
+}
+
+.change-opaque {
+    opacity: 0.32px;
+}
+
+.text-color {
+    color: black;
+}
+
+.text-color:active {
+    color: black;
+}
