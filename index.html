@@ -105,6 +105,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                <hr class="line-divider">
+                                <div id="holder">
+
+                                </div>
+
 
                             </div>
                             <div class="tab-pane fade" id="v-pills-cart" role="tabpanel" aria-labelledby="v-pills-cart-tab">...</div>
@@ -119,12 +124,33 @@
     </div>
     </div>
 
+    <script id="playbillTemplate" type="text/x-handlebars-template">
+        <div class="container pt-3">
+                <div class="card bg-secondary">
+                    <div class="card-body text-change text-center">
+                        <h2 class="">{{title}}</h2>
+                        <p class="fancy-font text-change font-weight-bold">
+                            ${{price}}
+                            <a href="#"><i class="fas fa-plus-square icon"></i></i></a>
+                        </p>
+                        <div class="playbill-details d-flex pt-3">
+                            <img src="{{imgSrc}}" class="pr-4" width=900px>
+                            <p class="fancy-font text-change">{{description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+    <script src="./data.js"></script>
     <script src="./javaScript.js"></script>
 
 
