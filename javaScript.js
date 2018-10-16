@@ -14,9 +14,9 @@ function loadPlaybills() {
 }
 loadPlaybills();
 
-document.querySelector("#link-to-rent").addEventListener("click", function() {
-    $("#v-pills-rent-tab").tab("show");
-});
+// document.querySelector("#link-to-rent").addEventListener("click", function() {
+//     $("#v-pills-rent-tab").tab("show");
+// });
 
 document.querySelector("#adding-to-cart").addEventListener("click", function() {
     $("#v-pills-cart-tab").tab("show");
@@ -69,8 +69,31 @@ function validPhoneNumber() {
 
 validPhoneNumber();
 
-// function addPrice() {
-//     var payForm = document.forms["payment-form"];
-//     var button = payForm.elements["button"];
+// function getRandom() {
+//     var randomImgSrc = Math.floor(Math.random() * PAGE_DATA.playbills.length);
+//     var randomPrice = Math.floor(Math.random() * PAGE_DATA.playbills.length)
 
 // }
+
+// function randomPlaybill() {
+//     var source = document.getElementById("randomPlaybillTemplate").innerHTML;
+//     var template = Handlebars.compile(source);
+//     var content = "";
+//     // for (var i = 0; i < PAGE_DATA.playbills.length; i++) {
+//     content += template({
+//         imgSrc: PAGE_DATA.playbills.imgSrc,
+//         price: PAGE_DATA.playbills.price,
+//         description: PAGE_DATA.playbills.description
+//     });
+
+//     document
+//         .querySelector("#randomPlaybill")
+//         .insertAdjacentHTML("beforeend", content);
+
+//     document
+//         .querySelector("#link-to-rent")
+//         .addEventListener("click", function() {
+//             $("#v-pills-rent-tab").tab("show");
+//         });
+// }
+// randomPlaybill();
