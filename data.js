@@ -5,7 +5,7 @@ const PAGE_DATA = {
             price: "129.95",
             imgSrc: "images/LegallyBlonde.jpg",
             description:
-                "Elle Woods appears to have it all. Her life is turned upside down when her boyfriend Warner dumps her so he can attend Harvard Law. Determined to get him back, Elle ingeniously charms her way into the prestigious law school. While there, she struggles with peers, professors and her ex. With the support of some new friends, though, Elle quickly realizes her potential and sets out to prove herself to the world."
+                "Elle Woods appears to have it all. Her life is turned upside down when her boyfriend Warner dumps her so he can attend Harvard Law. Determined to get him back, Elle ingeniously charms her way into the prestigious law school. While there, she struggles with peers, professors and her ex. With the support of some new friends, though, Elle quickly realizes her potential and sets out to prove herself to the world. This special playbill features the original cast of Legally Blonde on Broadway! "
         },
         {
             title: "Hamilton: An American Musical",

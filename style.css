@@ -32,3 +32,15 @@ body {
 .icon {
     color: white;
 }
+
+.valid {
+    color: green;
+}
+
+.invalid {
+    color: red;
+}
+
+.different-white {
+    color: white;
+}

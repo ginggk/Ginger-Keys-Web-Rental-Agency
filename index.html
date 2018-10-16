@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="container pt-4">
+    <div class="container pt-4 pb-4">
         <div class="card bg-secondary">
             <div class="card-header pt-3">
                 <div class="row ">
@@ -30,7 +30,7 @@
                                 role="tab" aria-controls="v-pills-cart" aria-selected="false"><i class="fas fa-cart-arrow-down"></i></a>
                         </div>
                     </div>
-                    <div class="col-9">
+                    <div class="col-9 pb-4">
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                                 <div class="card bg-secondary text-change pt-4 pb-4">
@@ -113,7 +113,72 @@
 
 
                             </div>
-                            <div class="tab-pane fade" id="v-pills-cart" role="tabpanel" aria-labelledby="v-pills-cart-tab">...</div>
+                            <div class="tab-pane fade" id="v-pills-cart" role="tabpanel" aria-labelledby="v-pills-cart-tab">
+                                <div class="container">
+                                    <div class="card bg-secondary">
+                                        <div class="card-body text-change">
+                                            <h2 class="fancy-font text-change text-center">
+                                                Welcome to checkout! This is where you put in your
+                                                information and we send you your playbill! If
+                                                all looks good, click the submit button!
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="container pt-4">
+                                        <!-- <div class="card"> -->
+                                        <form name="payment-form">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label class="text-change fancy-font" for="firstName">First Name</label>
+                                                    <input type="text" class="form-control" name="first-name"
+                                                        placeholder="Your first name..">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label class="text-change fancy-font" for="lastName">Last Name</label>
+                                                    <input type="text" class="form-control" placeholder="Your last name..">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputEmail" class="text-change fancy-font">Email Address</label>
+                                                <input type="text" class="form-control" id="inputEmail" name="email-address"
+                                                    placeholder="firstnamelastname@greatemail.com">
+                                                <p class="text-change fancy-font">*We will send you updates on new
+                                                    arrivals and
+                                                    specials!</p>
+                                                <p name="help-text" class="help-text text-change"></p>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="phoneNumber" class="text-change fancy-font">Your Contact
+                                                    Number</label>
+                                                <input type="number" class="form-control" name="phone-number" id="phoneNumber"
+                                                    placeholder="601234990">
+                                                <p class="text-change fancy-font">No spaces please!</p>
+                                                <p class="help-text2 text-change fancy-font"></p>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <h4 class="text-white text-center fancy-font">How would you like to pay
+                                                    for your
+                                                    Playbill?</h4>
+                                                <input type="checkbox" class="custom-control-input" id="payCash">
+                                                <label class="custom-control-label text-change" for="payCash">Cash</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="payCheck">
+                                                <label class="custom-control-label text-change fancy-font" for="payCheck">Check</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="payCard">
+                                                <label class="custom-control-label text-change fancy-font" for="payCard">Card</label>
+                                            </div>
+                                            <div class="pt-4">
+                                                <a class="text-white btn btn-danger btn-lg btn-block fancy-font" name="button"
+                                                    onclick="alert('Thank You!\nYour final total is: $0.00!')" type="button">Submit</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -121,26 +186,30 @@
         </div>
     </div>
     </div>
+    </div>
+    </div>
+    </div>
 
     </div>
     </div>
 
     <script id="playbillTemplate" type="text/x-handlebars-template">
-        <div class="container pt-3">
-                <div class="card bg-secondary">
-                    <div class="card-body text-change text-center">
-                        <h2 class="">{{title}}</h2>
-                        <p class="fancy-font text-change font-weight-bold">
-                            ${{price}}
-                            <a id="adding-to-cart" href="#v-pills-cart" data-toggle="tab"><i class="fas fa-plus-square icon"></i></i></a>
-                        </p>
-                        <div class="playbill-details d-flex pt-3">
-                            <img src="{{imgSrc}}" class="pr-4" width=900px>
-                            <p class="fancy-font text-change">{{description}}</p>
-                        </div>
-                    </div>
+    <div class="container pt-3">
+        <div class="card bg-secondary">
+            <div class="card-body text-change text-center">
+                <h2 class="">{{title}}</h2>
+                <p class="fancy-font text-change font-weight-bold">
+                    ${{price}}
+                    <a id="adding-to-cart" href="#v-pills-cart"
+                        data-toggle="tab"><i class="fas fa-plus-square icon"></i></i></a>
+                </p>
+                <div class="playbill-details d-flex pt-3">
+                    <img src="{{imgSrc}}" class="pr-4" width=900px>
+                    <p class="fancy-font text-change">{{description}}</p>
                 </div>
             </div>
+        </div>
+    </div>
 
     </script>
 
