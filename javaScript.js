@@ -1,6 +1,3 @@
-// var button = document.querySelector("button");
-// button.addEventListener("click", )
-
 function loadPlaybills() {
     var source = document.getElementById("playbillTemplate").innerHTML;
     var template = Handlebars.compile(source);
@@ -16,3 +13,11 @@ function loadPlaybills() {
     document.querySelector("#holder").insertAdjacentHTML("beforeend", content);
 }
 loadPlaybills();
+
+document.querySelector("#link-to-rent").addEventListener("click", function() {
+    $("#v-pills-rent-tab").tab("show");
+});
+
+document.querySelector("#adding-to-cart").addEventListener("click", function() {
+    $("#v-pills-cart-tab").tab("show");
+});

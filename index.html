@@ -84,8 +84,9 @@
                                                     <div class="price pt-3 text-center">
                                                         <p class="fancy-font text-change font-weight-bold">
                                                             Price: $15.00</p>
-                                                        <a href="#" class="button"><button class="btn btn-success btn-lg btn-block text-center fancy-font">Rent
-                                                                Now</button></a>
+                                                        <a class="btn btn-success btn-lg btn-block text-center fancy-font"
+                                                            id="link-to-rent" href="#v-pills-rent" data-toggle="tab">Rent
+                                                            Now</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -95,12 +96,12 @@
 
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="v-pills-rent" role="tabpanel" aria-labelledby="v-pills-rent-tab">
-                                <div class="container">
+                            <div class="tab-pane fade pb-6" id="v-pills-rent" role="tabpanel" aria-labelledby="v-pills-rent-tab">
+                                <div class="container ">
                                     <div class="card bg-secondary">
                                         <div class="card-body text-change">
                                             <h2 class="fancy-font text-center">
-                                                To add a playbill to your cart, press the plus sign at the bottom!
+                                                To add a playbill to your cart, press the plus sign by the price!
                                             </h2>
                                         </div>
                                     </div>
@@ -131,7 +132,7 @@
                         <h2 class="">{{title}}</h2>
                         <p class="fancy-font text-change font-weight-bold">
                             ${{price}}
-                            <a href="#"><i class="fas fa-plus-square icon"></i></i></a>
+                            <a id="adding-to-cart" href="#v-pills-cart" data-toggle="tab"><i class="fas fa-plus-square icon"></i></i></a>
                         </p>
                         <div class="playbill-details d-flex pt-3">
                             <img src="{{imgSrc}}" class="pr-4" width=900px>
