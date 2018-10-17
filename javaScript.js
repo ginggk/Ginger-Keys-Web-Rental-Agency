@@ -69,31 +69,32 @@ function validPhoneNumber() {
 
 validPhoneNumber();
 
-// function getRandom() {
-//     var randomImgSrc = Math.floor(Math.random() * PAGE_DATA.playbills.length);
-//     var randomPrice = Math.floor(Math.random() * PAGE_DATA.playbills.length)
+function getRandom() {
+    // for (var i = 0; i < PAGE_DATA.playbills.length; i++)
+    var i = Math.floor(Math.random() * PAGE_DATA.playbills.length);
+    return i;
+}
 
-// }
+function randomPlaybill() {
+    var source = document.getElementById("randomPlaybillTemplate").innerHTML;
+    var template = Handlebars.compile(source);
+    var content = "";
+    i = getRandom();
+    // for (var i = 0; i < PAGE_DATA.playbills.length; i++) {
+    content += template({
+        imgSrc: PAGE_DATA.playbills[i].imgSrc,
+        price: PAGE_DATA.playbills[i].price,
+        description: PAGE_DATA.playbills[i].description
+    });
 
-// function randomPlaybill() {
-//     var source = document.getElementById("randomPlaybillTemplate").innerHTML;
-//     var template = Handlebars.compile(source);
-//     var content = "";
-//     // for (var i = 0; i < PAGE_DATA.playbills.length; i++) {
-//     content += template({
-//         imgSrc: PAGE_DATA.playbills.imgSrc,
-//         price: PAGE_DATA.playbills.price,
-//         description: PAGE_DATA.playbills.description
-//     });
+    document
+        .querySelector("#randomPlaybill")
+        .insertAdjacentHTML("beforeend", content);
 
-//     document
-//         .querySelector("#randomPlaybill")
-//         .insertAdjacentHTML("beforeend", content);
-
-//     document
-//         .querySelector("#link-to-rent")
-//         .addEventListener("click", function() {
-//             $("#v-pills-rent-tab").tab("show");
-//         });
-// }
-// randomPlaybill();
+    document
+        .querySelector("#link-to-rent")
+        .addEventListener("click", function() {
+            $("#v-pills-rent-tab").tab("show");
+        });
+}
+randomPlaybill();

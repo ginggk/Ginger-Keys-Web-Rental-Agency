@@ -53,42 +53,7 @@
                                     <div class="container pt-3">
                                         <div class="row">
                                             <!-- <div class="col-lg-6"> -->
-                                            <div class="card bg-secondary">
-                                                <div class="card-body">
-                                                    <h2 class="card-title text-center text-change fancy-font">We
-                                                        think
-                                                        you would like..</h2>
-                                                    <hr class="border-white">
-                                                    <div class="playbill-info d-flex">
-                                                        <img class="pr-3" src="images/wicked.JPG" width=1095>
-                                                        <p class="fancy-font text-change pl-3">
-                                                            Wicked, the Broadway sensation, looks at what happened
-                                                            in
-                                                            the Land of Oz…but from a different angle. Long before
-                                                            Dorothy arrives, there is another girl, born with
-                                                            emerald-green skin—smart, fiery, misunderstood, and
-                                                            possessing an extraordinary talent. When she meets a
-                                                            bubbly
-                                                            blonde who is exceptionally popular, their initial
-                                                            rivalry
-                                                            turns into the unlikeliest of friendships…until the
-                                                            world
-                                                            decides to call one “good,” and the other one “wicked.”
-                                                            This infamous playbill is signed by the
-                                                            current cast of Wicked on Broadway. In honor of Wicked
-                                                            celebrating 15 years on Broadway, we have this limited
-                                                            edition
-                                                            Wicked playbill for a very low price! Get it today!
-                                                        </p>
-                                                    </div>
-                                                    <div class="price pt-3 text-center">
-                                                        <p class="fancy-font text-change font-weight-bold">
-                                                            Price: $15.00</p>
-                                                        <a class="btn btn-success btn-lg btn-block text-center fancy-font"
-                                                            id="link-to-rent" href="#v-pills-rent" data-toggle="tab">Rent
-                                                            Now</a>
-                                                    </div>
-                                                </div>
+                                            <div id="randomPlaybill" class="card bg-secondary d-flex">
                                             </div>
                                         </div>
 
@@ -193,7 +158,7 @@
     </div>
     </div>
 
-    <!-- <script id="randomPlaybillTemplate" type="text/x-handlebars-template">
+    <script id="randomPlaybillTemplate" type="text/x-handlebars-template">
         <div class="card-body">
                 <h2 class="card-title text-center text-change fancy-font">We
                     think
@@ -201,7 +166,7 @@
                 <hr class="border-white">
                 <div class="playbill-info d-flex">
                     <img class="pr-3" src="{{imgSrc}}" width=1095>
-                    <p class="fancy-font text-change pl-3"></p>
+                    <p class="fancy-font text-change pl-3">{{description}}</p>
                 </div>
                 <div class="price pt-3 text-center">
                     <p class="fancy-font text-change font-weight-bold">
@@ -211,7 +176,7 @@
                         Now</a>
                 </div>
             </div>
-    </script> -->
+    </script>
 
 
     <script id="playbillTemplate" type="text/x-handlebars-template">
