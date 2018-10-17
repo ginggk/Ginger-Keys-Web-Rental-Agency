@@ -136,7 +136,7 @@
                                                 <label class="custom-control-label text-change fancy-font" for="payCard">Card</label>
                                             </div>
                                             <div class="pt-4">
-                                                <a class="text-white btn btn-danger btn-lg btn-block fancy-font" name="button"
+                                                <a class="text-white btn btn-danger btn-lg btn-block fancy-font " name="button"
                                                     onclick="alert('Thank You!\nYour final total is: $0.00!')" type="button">Submit</a>
                                             </div>
                                         </form>
@@ -170,7 +170,7 @@
                 </div>
                 <div class="price pt-3 text-center">
                     <p class="fancy-font text-change font-weight-bold">
-                        Price: $15.00</p>
+                        Price: ${{price}}</p>
                     <a class="btn btn-success btn-lg btn-block text-center fancy-font"
                         id="link-to-rent" href="#v-pills-rent" data-toggle="tab">Rent
                         Now</a>
@@ -187,7 +187,7 @@
                 <p class="fancy-font text-change font-weight-bold">
                     ${{price}}
                     <a id="adding-to-cart" href="#v-pills-cart"
-                        data-toggle="tab"><i class="fas fa-plus-square icon"></i></i></a>
+                        data-toggle="tab" ><i class="fas fa-plus-square icon"></i></i></a>
                 </p>
                 <div class="playbill-details d-flex pt-3">
                     <img src="{{imgSrc}}" class="pr-4" width=900px>
