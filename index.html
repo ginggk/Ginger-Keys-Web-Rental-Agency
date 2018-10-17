@@ -53,7 +53,7 @@
                                     <div class="container pt-3">
                                         <div class="row">
                                             <!-- <div class="col-lg-6"> -->
-                                            <div id="randomPlaybill" class="card bg-secondary d-flex">
+                                            <div id="randomPlaybill" class="card bg-secondary">
                                             </div>
                                         </div>
 
@@ -94,12 +94,12 @@
                                         <form name="payment-form">
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label class="text-change fancy-font" for="firstName">First Name</label>
+                                                    <label class="text-change fancy-font">First Name</label>
                                                     <input type="text" class="form-control" name="first-name"
                                                         placeholder="Your first name..">
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                    <label class="text-change fancy-font" for="lastName">Last Name</label>
+                                                    <label class="text-change fancy-font">Last Name</label>
                                                     <input type="text" class="form-control" placeholder="Your last name..">
                                                 </div>
                                             </div>
@@ -110,7 +110,7 @@
                                                 <p class="text-change fancy-font">*We will send you updates on new
                                                     arrivals and
                                                     specials!</p>
-                                                <p name="help-text" class="help-text text-change"></p>
+                                                <p class="help-text text-change"></p>
                                             </div>
                                             <div class="form-group">
                                                 <label for="phoneNumber" class="text-change fancy-font">Your Contact
@@ -137,7 +137,7 @@
                                             </div>
                                             <div class="pt-4">
                                                 <a class="text-white btn btn-danger btn-lg btn-block fancy-font " name="button"
-                                                    onclick="alert('Thank You!\nYour final total is: $0.00!')" type="button">Submit</a>
+                                                    onclick="alert('Thank You!\nYour final total is: $0.00!')">Submit</a>
                                             </div>
                                         </form>
                                     </div>
@@ -150,13 +150,13 @@
             </div>
         </div>
     </div>
-    </div>
-    </div>
-    </div>
-    </div>
 
-    </div>
-    </div>
+
+
+
+
+
+
 
     <script id="randomPlaybillTemplate" type="text/x-handlebars-template">
         <div class="card-body">
@@ -164,8 +164,11 @@
                     think
                     you would like..</h2>
                 <hr class="border-white">
-                <div class="playbill-info d-flex">
-                    <img class="pr-3" src="{{imgSrc}}" width=1095>
+                <div>
+                    <h2 class="text-change fancy-font text-center pb-4">{{title}}</h2>
+                </div>
+                <div class="playbill-info ">
+                    <img class="pr-3 home-image" src="{{imgSrc}}" >
                     <p class="fancy-font text-change pl-3">{{description}}</p>
                 </div>
                 <div class="price pt-3 text-center">
@@ -189,8 +192,8 @@
                     <a id="adding-to-cart" href="#v-pills-cart"
                         data-toggle="tab" ><i class="fas fa-plus-square icon"></i></i></a>
                 </p>
-                <div class="playbill-details d-flex pt-3">
-                    <img src="{{imgSrc}}" class="pr-4" width=900px>
+                <div class="playbill-details pt-3">
+                    <img src="{{imgSrc}}" class="pr-4 rent-image" >
                     <p class="fancy-font text-change">{{description}}</p>
                 </div>
             </div>

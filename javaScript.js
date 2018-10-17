@@ -82,6 +82,7 @@ function randomPlaybill() {
     content += template({
         imgSrc: PAGE_DATA.playbills[i].imgSrc,
         price: PAGE_DATA.playbills[i].price,
+        title: PAGE_DATA.playbills[i].title,
         description: PAGE_DATA.playbills[i].description
     });
 
@@ -98,6 +99,7 @@ function randomPlaybill() {
 randomPlaybill();
 
 // function alertPrice(i) {
-//     var item = PAGE_DATA.playbills[i].price;
-//     alert("Thank You!\nYour final total is: $0.00!");
+//     console.log(i);
+//     var item = PAGE_DATA.playbills[i].index.price;
+//     alert(`Thank You!\nYour final total is: $${item}!`);
 // }

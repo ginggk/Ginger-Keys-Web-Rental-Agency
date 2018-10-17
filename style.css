@@ -44,3 +44,22 @@ body {
 .different-white {
     color: white;
 }
+
+.rent-image {
+    width: 200px;
+}
+
+@media screen and (min-width: 600px) {
+    .playbill-details {
+        display: flex;
+    }
+    .playbill-info {
+        display: flex;
+    }
+    .home-image {
+        width: 1095px;
+    }
+    .rent-image {
+        width: 900px;
+    }
+}
