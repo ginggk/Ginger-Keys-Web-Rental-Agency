@@ -98,8 +98,10 @@ function randomPlaybill() {
 }
 randomPlaybill();
 
-// function alertPrice(i) {
-//     console.log(i);
-//     var item = PAGE_DATA.playbills[i].index.price;
-//     alert(`Thank You!\nYour final total is: $${item}!`);
-// }
+function showThanks() {
+    var payForm = document.forms["payment-form"];
+    var firstInput = payForm["first-name"];
+    var firstName = firstInput.value;
+    var formContainer = document.querySelector(".form-container");
+    formContainer.innerHTML = `<h1 class="put-margin text-change text-center ">Thanks, ${firstName} for your purchase!</h1> <i class="fas fa-smile-beam text-change"></i>`;
+}

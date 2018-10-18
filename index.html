@@ -79,7 +79,7 @@
 
                             </div>
                             <div class="tab-pane fade" id="v-pills-cart" role="tabpanel" aria-labelledby="v-pills-cart-tab">
-                                <div class="container">
+                                <div class="container form-container">
                                     <div class="card bg-secondary">
                                         <div class="card-body text-change">
                                             <h2 class="fancy-font text-change text-center">
@@ -91,22 +91,23 @@
                                     </div>
                                     <div class="container pt-4">
                                         <!-- <div class="card"> -->
-                                        <form name="payment-form">
+                                        <form name="payment-form" onsubmit="showThanks()">
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
                                                     <label class="text-change fancy-font">First Name</label>
                                                     <input type="text" class="form-control" name="first-name"
-                                                        placeholder="Your first name..">
+                                                        placeholder="Your first name.." required>
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label class="text-change fancy-font">Last Name</label>
-                                                    <input type="text" class="form-control" placeholder="Your last name..">
+                                                    <input type="text" name="last-name" class="form-control"
+                                                        placeholder="Your last name.." required>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label for="inputEmail" class="text-change fancy-font">Email Address</label>
                                                 <input type="text" class="form-control" id="inputEmail" name="email-address"
-                                                    placeholder="firstnamelastname@greatemail.com">
+                                                    placeholder="firstnamelastname@greatemail.com" required>
                                                 <p class="text-change fancy-font">*We will send you updates on new
                                                     arrivals and
                                                     specials!</p>
@@ -116,7 +117,7 @@
                                                 <label for="phoneNumber" class="text-change fancy-font">Your Contact
                                                     Number</label>
                                                 <input type="number" class="form-control" name="phone-number" id="phoneNumber"
-                                                    placeholder="601234990">
+                                                    placeholder="601234990" required>
                                                 <p class="text-change fancy-font">No spaces please!</p>
                                                 <p class="help-text2 text-change fancy-font"></p>
                                             </div>
@@ -124,21 +125,24 @@
                                                 <div class="form-group col-md-6">
                                                     <label class="text-change fancy-font">Street Address</label>
                                                     <input type="text" class="form-control" name="street-address"
-                                                        placeholder="234 Avenue Lane..">
+                                                        placeholder="234 Avenue Lane.." required>
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label class="text-change fancy-font">City</label>
-                                                    <input type="text" class="form-control" placeholder="City..">
+                                                    <input type="text" class="form-control" placeholder="City.."
+                                                        required>
                                                 </div>
                                             </div>
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
                                                     <label class="text-change fancy-font">State</label>
-                                                    <input type="text" class="form-control" name="state" placeholder="State..">
+                                                    <input type="text" class="form-control" name="state" placeholder="State.."
+                                                        required>
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label class="text-change fancy-font">Zip Code</label>
-                                                    <input type="text" class="form-control" placeholder="Your 5 digit zip code...">
+                                                    <input type="text" class="form-control" placeholder="Your 5 digit zip code..."
+                                                        required>
                                                 </div>
                                             </div>
                                             <div class="custom-control custom-checkbox">
@@ -157,8 +161,8 @@
                                                 <label class="custom-control-label text-change fancy-font" for="payCard">Card</label>
                                             </div>
                                             <div class="pt-4">
-                                                <a class="text-white btn btn-danger btn-lg btn-block fancy-font " name="button"
-                                                    onclick="alert('Thank You!\nYour final total is: $0.00!')">Submit</a>
+                                                <button class="text-white btn btn-danger btn-lg btn-block fancy-font "
+                                                    type="submit" name="button">Submit</button>
                                             </div>
                                         </form>
                                     </div>

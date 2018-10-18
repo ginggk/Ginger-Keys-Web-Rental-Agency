@@ -59,4 +59,11 @@ img {
     img {
         height: 295px;
     }
+    .put-margin {
+        margin-top: 11rem;
+    }
+    .center-thumbs {
+        align-content: center;
+        width: 230px;
+    }
 }
