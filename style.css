@@ -45,7 +45,7 @@ body {
     color: white;
 }
 
-.rent-image {
+img {
     width: 200px;
 }
 
@@ -56,10 +56,7 @@ body {
     .playbill-info {
         display: flex;
     }
-    .home-image {
-        width: 1095px;
-    }
-    .rent-image {
-        width: 900px;
+    img {
+        height: 295px;
     }
 }
