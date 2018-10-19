@@ -3,14 +3,9 @@ function loadPlaybills() {
     var template = Handlebars.compile(source);
     var content = "";
     for (var i = 0; i < PAGE_DATA.playbills.length; i++) {
-        content += template({
-            title: PAGE_DATA.playbills[i].title,
-            price: PAGE_DATA.playbills[i].price,
-            imgSrc: PAGE_DATA.playbills[i].imgSrc,
-            description: PAGE_DATA.playbills[i].description,
-            i: PAGE_DATA.playbills[i].index
-        });
+        content += template(PAGE_DATA.playbills[i]);
     }
+
     document.querySelector("#holder").insertAdjacentHTML("beforeend", content);
 }
 loadPlaybills();
@@ -122,3 +117,9 @@ function showThanks() {
 //         });
 //     }
 // }
+
+// title: PAGE_DATA.playbills[i].title,
+// price: PAGE_DATA.playbills[i].price,
+// imgSrc: PAGE_DATA.playbills[i].imgSrc,
+// description: PAGE_DATA.playbills[i].description,
+// i: PAGE_DATA.playbills[i].index
