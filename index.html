@@ -172,6 +172,16 @@
         </div>
     </div>
 
+    <script id="thanksTemplate" type="text/x-handlebars-template">
+        <div class="container">
+            <h1 class="put-margin text-change text-center">Thank you {{firstName}} {{lastName}} for your purchase!</h1> 
+            <h1 class="text-change text-center">Your Final Total is: {{price}}</h1>
+            <div class="pt-4">
+                <button id="refreshButton" onclick="refreshPage()" type="submit" class="btn btn-warning btn-lg btn-block "><i class="fas fa-heart"></i></button>
+            </div>
+        </div>
+    </script>
+
 
 
 

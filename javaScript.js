@@ -93,12 +93,26 @@ function showThanks() {
     var firstName = firstInput.value;
     var lastInput = payForm["last-name"];
     var lastName = lastInput.value;
+    var source = document.getElementById("thanksTemplate").innerHTML;
+    var template = Handlebars.compile(source);
     // var price = selectPrice();
     var formContainer = document.querySelector(".form-container");
 
-    formContainer.innerHTML = `<h1 class="put-margin text-change text-center ">Thank you ${firstName} ${lastName} for your purchase!</h1> <h1 class="text-change text-center" >Your Final Total is: $0.00</h1>`;
+    formContainer.innerHTML = template({
+        firstName: firstName,
+        lastName: lastName,
+        price: "$0.00"
+    });
+    document
+        .querySelector("#refreshButton")
+        .addEventListener("click", function() {
+            $("#v-pills-home-tab").tab("show");
+        });
 }
 
+function refreshPage() {
+    location.reload();
+}
 // function putPrice(index) {
 //     var price = PAGE_DATA.playbills[index].price;
 //     console.log(price);
