@@ -146,20 +146,16 @@
                                                         required>
                                                 </div>
                                             </div>
-                                            <div class="custom-control custom-checkbox">
+                                            <div>
                                                 <h4 class="text-white text-center fancy-font">How would you like to pay
                                                     for your
                                                     Playbill?</h4>
-                                                <input type="checkbox" class="custom-control-input" id="payCash">
-                                                <label class="custom-control-label text-change" for="payCash">Cash</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="payCheck">
-                                                <label class="custom-control-label text-change fancy-font" for="payCheck">Check</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="payCard">
-                                                <label class="custom-control-label text-change fancy-font" for="payCard">Card</label>
+                                                <input type="radio" value="cash" id="payCash" name="drone">
+                                                <label class="text-change fancy-font" for="cash">Cash</label>
+                                                <input type="radio" value="check" id="payCheck" name="drone">
+                                                <label class="text-change fancy-font" for="check">Check</label>
+                                                <input type="radio" value="card" id="payCard" name="drone">
+                                                <label class="text-change fancy-font" for="card">Card</label>
                                             </div>
                                             <div class="pt-4">
                                                 <button class="text-white btn btn-danger btn-lg btn-block fancy-font "
