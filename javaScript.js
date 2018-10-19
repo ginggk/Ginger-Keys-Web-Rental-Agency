@@ -22,12 +22,6 @@ for (var i = 0; i < sourceLink.length; i++) {
     });
 }
 
-$('input[type="checkbox"]').on("change", function() {
-    $('input[type="checkbox"]')
-        .not(this)
-        .prop("checked", false);
-});
-
 function getFirstName() {
     var payForm = document.forms["payment-form"];
     var emailInput = payForm.elements["email-address"];
