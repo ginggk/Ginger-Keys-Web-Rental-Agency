@@ -91,6 +91,7 @@
                                     </div>
                                     <div class="container pt-4">
                                         <!-- <div class="card"> -->
+                                        <p class="empty-pTag"></p>
                                         <form name="payment-form" onsubmit="showThanks()">
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
@@ -212,11 +213,14 @@
         <div class="card bg-secondary">
             <div class="card-body text-change text-center">
                 <h2 class="">{{title}}</h2>
-                <p class="fancy-font text-change font-weight-bold">
-                    ${{price}}
-                    <a id="adding-to-cart" href="#v-pills-cart"
-                        data-toggle="tab" ><i class="fas fa-plus-square icon"></i></i></a>
-                </p>
+                <div class="d-flex margin-price">
+                    <p class="fancy-font text-change font-weight-bold pr-2 price-location">
+                        ${{price}}</p>
+                    <p class="fancy-font text-change font-weight-bold">
+                        <a class="adding-to-cart" href="#v-pills-cart" 
+                            data-toggle="tab" ><i class="fas fa-plus-square icon"></i></a>
+                    </p>
+                </div>
                 <div class="playbill-details pt-3">
                     <img src="{{imgSrc}}" class="pr-4 rent-image" >
                     <p class="fancy-font text-change">{{description}}</p>

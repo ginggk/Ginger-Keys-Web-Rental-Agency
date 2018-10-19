@@ -15,7 +15,7 @@ function loadPlaybills() {
 }
 loadPlaybills();
 
-var sourceLink = document.querySelectorAll("#adding-to-cart");
+var sourceLink = document.querySelectorAll(".adding-to-cart");
 for (var i = 0; i < sourceLink.length; i++) {
     sourceLink[i].addEventListener("click", function() {
         $("#v-pills-cart-tab").tab("show");
@@ -102,6 +102,27 @@ function showThanks() {
     var payForm = document.forms["payment-form"];
     var firstInput = payForm["first-name"];
     var firstName = firstInput.value;
+    var price = selectPrice();
     var formContainer = document.querySelector(".form-container");
-    formContainer.innerHTML = `<h1 class="put-margin text-change text-center ">Thanks, ${firstName} for your purchase!</h1> <i class="fas fa-smile-beam text-change"></i>`;
+
+    formContainer.innerHTML = `<h1 class="put-margin text-change text-center ">Thanks ${firstName} for your purchase!</h1> <h1 class="text-change text-center" >Your Final Total is: ${price}</h1>`;
+}
+
+function putPrice(index) {
+    var price = PAGE_DATA.playbills[index].price;
+    console.log(price);
+    var getPrice = "$" + price;
+    return getPrice;
+}
+
+function selectPrice() {
+    var buttons = document.querySelectorAll(".adding-to-cart");
+    console.log(buttons);
+    for (var i = 0; i < buttons.length; i++) {
+        var button = buttons[i];
+        console.log(button);
+        button.addEventListener("click", function() {
+            putPrice(i);
+        });
+    }
 }
