@@ -14,6 +14,7 @@ var sourceLink = document.querySelectorAll(".adding-to-cart");
 for (var i = 0; i < sourceLink.length; i++) {
     sourceLink[i].addEventListener("click", function() {
         $("#v-pills-cart-tab").tab("show");
+        $("#v-pills-cart-tab").val(this.id);
     });
 }
 
@@ -88,6 +89,7 @@ function randomPlaybill() {
 randomPlaybill();
 
 function showThanks() {
+    var index = document.getElementById("v-pills-cart-tab").value;
     var payForm = document.forms["payment-form"];
     var firstInput = payForm["first-name"];
     var firstName = firstInput.value;
@@ -101,7 +103,7 @@ function showThanks() {
     formContainer.innerHTML = template({
         firstName: firstName,
         lastName: lastName,
-        price: "$0.00"
+        price: putPrice(index)
     });
     document
         .querySelector("#refreshButton")
@@ -113,12 +115,12 @@ function showThanks() {
 function refreshPage() {
     location.reload();
 }
-// function putPrice(index) {
-//     var price = PAGE_DATA.playbills[index].price;
-//     console.log(price);
-//     var getPrice = "$" + price;
-//     return getPrice;
-// }
+function putPrice(index) {
+    var price = PAGE_DATA.playbills[index].price;
+    console.log(price);
+    var getPrice = "$" + price;
+    return getPrice;
+}
 
 // function selectPrice() {
 //     var buttons = document.querySelectorAll(".adding-to-cart");
